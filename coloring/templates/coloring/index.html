@@ -17,45 +17,104 @@
 <body id="background">
 	<div class="container-fluid" style="width: 200px;">
 
-		<a href="/weather/calendar/" class="btn default fa fa-cog fa-3x" style="color:white" id="left-panel-link" role="button" aria-pressed="true"></a>
+		<a href="/weather/calendar/">
+			<img src="../static/coloring/images/login-icon.png" class="btn default fa fa-cog" style="color:white" id="left-panel-link" role="button" aria-pressed="true">
+		</a>
 
-		<a href="/weather/calendar/" class="btn default fa fa-cog fa-3x" style="color:white" id="right-panel-link" role="button" aria-pressed="true"></a>
+		<a href="/weather/calendar/" class="btn default fa fa-cog fa-3x" style="color:white; height:20%" id="right-panel-link" role="button" aria-pressed="true"></a>
 	
 	</div>
 	<p></p>
-	<div class="container-fluid form-control-static" id="rectangle">
-		<div class="row">
-			<div class="col col-md-1" style="color:red">C</div>
-			<div class="col col-md-1" style="color:orange">O</div>
-			<div class="col col-md-1" style="color:">L</div>
-			<div class="col col-md-1">O</div>
-			<div class="col col-md-1 text-success">R</div>
-			<div class="col col-md-1 text-info">F</div>
-			<div class="col col-md-1 text-primary">U</div>
-			<div class="col col-md-1 ">L</div>
-			<div></div>
-			<div class="col col-md-1 text-dark">L</div>
-			<div class="col col-md-1 text-dark">I</div>
-			<div class="col col-md-1 text-dark">F</div>
-			<div class="col col-md-1 text-dark">E</div>
-			<!--<p style="color:red"> C <span></span> <p style="color:orange"> O </p>-->
+	<div class="container-fluid" id="rectangle">
+		<div class="row" style = "height:100%; margin:auto">
+			<h1 class="col col-md-1" style="color:red">C</h1>
+			<h1 class="col col-md-1" style="color:orange">O</h1>
+			<h1 class="col col-md-1" style="color:coral">L</h1>
+			<h1 class="col col-md-1" style="color:yellow">O</h1>
+			<h1 class="col col-md-1" style="color:green">R</h1>
+			<h1 class="col col-md-1" style="color:blue">F</h1>
+			<h1 class="col col-md-1" style="color:darkblue">U</h1>
+			<h1 class="col col-md-1" style="color:purple">L</h1>
+			<h1 class="col col-md-1 text-dark">L</h1>
+			<h1 class="col col-md-1 text-dark">I</h1>
+			<h1 class="col col-md-1 text-dark">F</h1>
+			<h1 class="col col-md-1 text-dark">E</h1>
+			<!--<h1 style="color:red; font-weight:normal; font-size:100px; text-align:left; margin:auto"> C </h1><span>&nbsp;</span> <h1 style="color:orange"> O </h1>-->
 		</div>
 	</div>
 	<p></p>
 	<div class="container-fluid" id="rectangle2">
-		<div class="row">
-			<div class="col col-md-2"></div> 
-			<div class="col col-md-2"></div> 
-			<div class="col col-md-2"></div> 
-			<div class="col col-md-2"></div> 
-	</div>
-	<p></p>
-	<div class="container-fluid" id="rectangle2">
+		<h3 style="color:gray">START A NEW ARTWORK:</h3>
+		<div class="row" style = "height:90%; margin:auto">
+			<img src="../static/coloring/images/blank.png" class="col-3 mr-auto" style="height:90%;" id="blank">
+			<img src="../static/coloring/images/blank-with-reference.png" class="col-3 mr-auto" style="height:90%;" id="blankWithReference">
+			<img src="../static/coloring/images/as-reference.png" class="col-3 mr-auto" style="height:90%;" id="asReference">
+			<img src="../static/coloring/images/random-template.png" class="col-3 mr-auto" style="height:90%;" id="randomTemplate">
+		</div>
 
 	</div>
 	<p></p>
 	<div class="container-fluid" id="rectangle2">
+		<h3 style="color:gray">TEMPLATES OF THE WEEK:</h3>
+		<div class="row" style = "height:90%; margin:auto">
+			<img src="../static/coloring/images/rose-icon.png" class="col-3 mr-auto" style="height:90%;" id="rose">
+			<img src="../static/coloring/images/minion-icon.png" class="col-3 mr-auto" style="height:90%;" id="minion">
+			<img src="../static/coloring/images/forest-fairy-icon.png" class="col-3 mr-auto" style="height:90%;" id="forestFairy">
+			<img src="../static/coloring/images/flower-mandala-icon.png" class="col-3 mr-auto" style="height:90%;" id="flowerMandala">
+		</div>
 
 	</div>
+	<p></p>
+	<div class="container-fluid" id="rectangle2">
+		<h3 style="color:gray">PREVIOUS ARTWORKS:</h3>
+		<div class="row" style = "height:90%; margin:auto">
+			<img src="../static/coloring/images/untitled-icon.png" class="col-3 mr-auto" style="height:90%;" id="untitled">
+			<img src="../static/coloring/images/my-dog-icon.png" class="col-3 mr-auto" style="height:90%;" id="myDog">
+			<img src="../static/coloring/images/mountain-shasta-icon.png" class="col-3 mr-auto" style="height:90%;" id="mountain">
+			<img src="../static/coloring/images/leaf-doodle-icon.png" class="col-3 mr-auto" style="height:90%;" id="leafDoodle">
+		</div>
+
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#blank').click(function(){
+				location.href = "/weather/calendar/";
+			});
+			$('#blankWithReference').click(function(){
+				location.href = "/weather/calendar/";
+			});
+			$('#asReference').click(function(){
+				location.href = "/weather/calendar/";
+			});
+			$('#randomTemplate').click(function(){
+				location.href = "/weather/calendar/";
+			});
+			$('#rose').click(function(){
+				location.href = "/weather/calendar/";
+			});
+			$('#minion').click(function(){
+				location.href = "/weather/calendar/";
+			});
+			$('#forestFairy').click(function(){
+				location.href = "/weather/calendar/";
+			});
+			$('#flowerMandala').click(function(){
+				location.href = "/weather/calendar/";
+			});
+			$('#untitled').click(function(){
+				location.href = "/weather/calendar/";
+			});
+			$('#myDog').click(function(){
+				location.href = "/weather/calendar/";
+			});
+			$('#mountain').click(function(){
+				location.href = "/weather/calendar/";
+			});
+			$('#leafDoodle').click(function(){
+				location.href = "/weather/calendar/";
+			});
+		});
+	</script>
 </body>
 </html>
