@@ -75,3 +75,63 @@ h1 {
     left: 0;
 }
   
+#background2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+
+    background: white;
+}
+
+#account {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.44em;
+
+    color: #000000;
+}
+
+#acc-rectangle1 {
+    margin: auto;
+    width: 90%;
+    height: 93px;
+    left: 41px;
+    top: 66px;
+
+    background: #FFFFFF;
+    border: 1.64103px solid #D5D5D5;
+    box-sizing: border-box;
+}
+
+#acc-rectangle2 {
+    margin: auto;
+    width: 90%;
+    height: 980px;
+    left: 41px;
+    top: 200.4px;
+
+    background: #FFFFFF;
+    border: 1.64103px solid #D5D5D5;
+    box-sizing: border-box;
+}
+
+#acc-inner1 {
+    margin: auto;
+    width: 80%;
+    height: 60px;
+    left: 36px;
+    top: 274px;
+
+    background: #D5D5D5;
+    border: 4px solid #D5D5D5;
+    box-sizing: border-box;
+    border-radius: 28px;
+}

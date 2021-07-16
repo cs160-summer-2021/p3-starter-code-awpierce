@@ -17,11 +17,11 @@
 <body id="background">
 	<div class="container-fluid" style="width: 200px;">
 
-		<a href="/weather/calendar/">
+		<a href="#">
 			<img src="../static/coloring/images/login-icon.png" class="btn default fa fa-cog" style="color:white" id="left-panel-link" role="button" aria-pressed="true">
 		</a>
 
-		<a href="/weather/calendar/" class="btn default fa fa-cog fa-3x" style="color:white; height:20%" id="right-panel-link" role="button" aria-pressed="true"></a>
+		<a href="/coloring/setting/" class="btn default fa fa-cog fa-3x" style="color:white; height:20%" id="right-panel-link" role="button" aria-pressed="true"></a>
 	
 	</div>
 	<p></p>
@@ -78,11 +78,14 @@
 
 	<script type="text/javascript">
 		$(document).ready(function() {
+			$('#left-panel-link').click(function(){
+				location.href = "/coloring/account/";
+			});
 			$('#blank').click(function(){
 				location.href = "/weather/calendar/";
 			});
 			$('#blankWithReference').click(function(){
-				location.href = "/weather/calendar/";
+				location.href = "/coloring/reference/";
 			});
 			$('#asReference').click(function(){
 				location.href = "/weather/calendar/";
@@ -100,7 +103,7 @@
 				location.href = "/weather/calendar/";
 			});
 			$('#flowerMandala').click(function(){
-				location.href = "/weather/calendar/";
+				location.href = "/coloring/new_interaction/";
 			});
 			$('#untitled').click(function(){
 				location.href = "/weather/calendar/";
