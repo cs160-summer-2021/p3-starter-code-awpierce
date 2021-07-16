@@ -6,5 +6,7 @@ urlpatterns = [
     path('new_interaction/', views.new_interaction, name='new_interaction'),
     path('account/', views.account, name='account'),
     path('setting/', views.setting, name='setting'),
-    path('reference/', views.reference, name='reference')
+    path('reference/', views.reference, name='reference'),
+    path('sketch/', views.sketch, name='sketch'),
+    path('sketch_with_reference/', views.sketch_with_reference, name='sketch_with_reference')
 ]

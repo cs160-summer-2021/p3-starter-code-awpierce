@@ -14,3 +14,9 @@ def setting(request):
 
 def reference(request):
     return render(request, 'coloring/reference.html')
+
+def sketch(request):
+    return render(request, 'coloring/sketch.html')
+
+def sketch_with_reference(request):
+    return render(request, 'coloring/sketch_with_reference.html')
