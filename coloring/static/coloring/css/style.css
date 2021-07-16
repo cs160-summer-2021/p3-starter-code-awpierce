@@ -1,7 +1,12 @@
 
 @font-face {
     font-family: Bebas;
-    src: url(/coloring/static/coloring/fonts/Bebas.ttf);
+    src: url(Bebas.ttf);
+}
+
+@font-face {
+    font-family: Rubik_Light;
+    src: url(Rubik-Light.ttf);
 }
 
 p {
@@ -9,12 +14,20 @@ p {
 }
 
 h1 {
-    font-family: 'CustomFont', Bebas;
-    font-size: 27.9655px;
-    line-height: 34px;
-
-    color: #B3B3B3;
+    font-family: 'CustomFont', Rubik_Light;
+    font-size: 60px;
 }
+
+h2 {
+    font-family: 'CustomFont', Rubik_Light;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'CustomFont', Bebas;
+    font-size: 30px;
+}
+
 
 .fa-cog{text-shadow:-4px 4px 2px rgba(0, 0, 0, 0.25)}
 
