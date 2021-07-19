@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  	<title>P3 Coloring</title>
+
+	<link rel="stylesheet" type="text/css" href="{% static 'coloring/vendors/bootstrap/css/bootstrap.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'coloring/css/style.css' %}" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<script type="text/javascript" src="{% static 'coloring/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'coloring/vendors/paper/paper-full.min.js' %}"></script>
+
+</head>
+<body id="background2">
+    <div class="container-fluid" style="width: 200px;">
+
+		<a href="#">
+			<img src="/static/coloring/images/cross-icon.png" class="btn default fa fa-cog" style="color:white" id="left-panel-link" role="button" aria-pressed="true">
+		</a>
+    </div>
+	<p></p>
+	<div class="container-fluid" id="acc-rectangle1">
+        <div class="row justify-content-center" style="height: 100%">
+            <h1 style="margin:auto; letter-spacing: 25px"> PICK A SWATCH </h1>
+        </div>
+    </div>
+
+    <p></p>
+	<div class="container-fluid" id="acc-rectangle2">
+        <div class="row">
+			<label for="colorpicker">Color Picker:</label>
+   			<input type="color" id="colorpicker" value="#0000ff">
+        </div>
+    
+    </div>
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('#left-panel-link').click(function(){
+				location.href = "../demo";
+			});
+        });
+    </script>
+</body>
+</html>

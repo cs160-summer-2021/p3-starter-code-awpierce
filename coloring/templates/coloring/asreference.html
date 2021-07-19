@@ -1,0 +1,83 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  	<title>P3 Coloring</title>
+
+	<link rel="stylesheet" type="text/css" href="{% static 'coloring/vendors/bootstrap/css/bootstrap.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'coloring/css/style.css' %}" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<script type="text/javascript" src="{% static 'coloring/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'coloring/vendors/paper/paper-full.min.js' %}"></script>
+
+</head>
+<body id="background2">
+    <div class="container-fluid" style="width: 200px;">
+
+		<a href="#">
+			<img src="/static/coloring/images/cross-icon.png" class="btn default fa fa-cog" style="color:white" id="left-panel-link" role="button" aria-pressed="true">
+		</a>
+        <a href="#">
+			<img src="/static/coloring/images/camera-icon.png" class="btn default fa fa-cog" style="color:white" id="right-panel-link" role="button" aria-pressed="true">
+		</a>
+    </div>
+	<p></p>
+	<div class="container-fluid" id="acc-rectangle1">
+        <div class="row" style = "height:100%; margin:auto">
+            <h1 style="margin:auto; letter-spacing: 25px">
+                <span style="color:red">C</span><span style="color:orange">A</span><span style="color:rgb(226, 210, 64)">M</span><span style="color:green">E</span><span style="color:blue">R</span><span style="color:purple">A</span>
+                <span style="color:black">ROLL</span>
+            </h1>
+        </div>
+    </div>
+
+    <p></p>
+	<div class="container-fluid" id="acc-rectangle3" >
+        <div class="row" style="margin-top: 5%">
+        <h2 class="col-md-12" style="color:grey; margin:auto; letter-spacing: 10px; font-size: 30px;" align="center">SELECT REFERENCE PHOTO</h2>
+        </div>
+
+        <div class="row" style="margin-top: 3%">
+            <img src="/static/coloring/images/rose2.jpg" class="col-3 mr-auto img-container" style="height:90%;" id="white-rose">
+            <img src="/static/coloring/images/greybox.png" class="col-3 mr-auto" style="height:90%; width:20px">
+            <img src="/static/coloring/images/greybox.png" class="col-3 mr-auto" style="height:90%;">
+            <img src="/static/coloring/images/greybox.png" class="col-3 mr-auto" style="height:90%;">
+        </div>
+
+        <div class="row" style="margin-top: 3%">
+            <img src="/static/coloring/images/greybox.png" class="col-3 mr-auto" style="height:90%;">
+            <img src="/static/coloring/images/greybox.png" class="col-3 mr-auto" style="height:90%;">
+            <img src="/static/coloring/images/greybox.png" class="col-3 mr-auto" style="height:90%;">
+            <img src="/static/coloring/images/greybox.png" class="col-3 mr-auto" style="height:90%;">
+        </div>
+
+        <div class="row" style="margin-top: 3%">
+            <img src="/static/coloring/images/greybox.png" class="col-3 mr-auto" style="height:90%;">
+            <img src="/static/coloring/images/greybox.png" class="col-3 mr-auto" style="height:90%;">
+            <img src="/static/coloring/images/greybox.png" class="col-3 mr-auto" style="height:90%;">
+            <img src="/static/coloring/images/greybox.png" class="col-3 mr-auto" style="height:90%;">
+        </div>
+
+        <div class="row" style="margin-top: 3%">
+            <img src="/static/coloring/images/greybox.png" class="col-3 mr-auto" style="height:90%;">
+            <img src="/static/coloring/images/greybox.png" class="col-3 mr-auto" style="height:90%;">
+            <img src="/static/coloring/images/greybox.png" class="col-3 mr-auto" style="height:90%;">
+            <img src="/static/coloring/images/greybox.png" class="col-3 mr-auto" style="height:90%;">
+        </div>
+    
+    </div>
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('#left-panel-link').click(function(){
+				location.href = "../demo";
+			});
+            $('#white-rose').click(function(){
+				location.href = "../sketch_as_reference";
+			});
+        });
+    </script>
+</body>
+</html>
